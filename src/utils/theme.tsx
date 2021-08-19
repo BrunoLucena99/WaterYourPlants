@@ -2,6 +2,9 @@ export const colors = {
   primary: '#0E170E',
   secondary: '#475A42',
   white: '#FFF',
+  icons: {
+    googleAuth: '#EA4335',
+  },
 };
 
 export const fontSizes = {

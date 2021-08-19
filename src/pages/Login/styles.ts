@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {MaterialCommunityIcon} from '../../components/Icons';
 import theme from '../../utils/theme';
 
 export const MainContainer = styled.SafeAreaView`
@@ -21,13 +22,20 @@ export const AuthGoogleButton = styled.TouchableOpacity`
   width: 100%;
   margin-top: 30px;
   padding: 10px 15px;
-  align-items: center;
   border-radius: 10px;
   elevation: 2;
+  flex-direction: row;
+  justify-content: center;
 `;
 
 export const AuthGoogleText = styled.Text`
   font-family: ${theme.fontFamily.regular};
   text-align: center;
   font-size: ${theme.fontSizes.md}px;
+`;
+
+export const GoogleIcon = styled(MaterialCommunityIcon)`
+  position: absolute;
+  left: 10px;
+  align-self: center;
 `;

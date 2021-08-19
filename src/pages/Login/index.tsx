@@ -1,13 +1,29 @@
 import React from 'react';
-import {AuthGoogleButton, AuthGoogleText, MainContainer, Title} from './styles';
+import {useTheme} from 'styled-components';
+import theme from '../../utils/theme';
+import {
+  AuthGoogleButton,
+  AuthGoogleText,
+  GoogleIcon,
+  MainContainer,
+  Title,
+} from './styles';
 
-const Login = () => (
-  <MainContainer>
-    <Title>Water your Plants!</Title>
-    <AuthGoogleButton>
-      <AuthGoogleText>Continuar com o Google</AuthGoogleText>
-    </AuthGoogleButton>
-  </MainContainer>
-);
+const Login = () => {
+  const {icons} = useTheme();
+  return (
+    <MainContainer>
+      <Title>Water your Plants!</Title>
+      <AuthGoogleButton>
+        <GoogleIcon
+          name="google"
+          size={theme.fontSizes.md}
+          color={icons.googleAuth}
+        />
+        <AuthGoogleText>Continuar com o Google</AuthGoogleText>
+      </AuthGoogleButton>
+    </MainContainer>
+  );
+};
 
 export default Login;
