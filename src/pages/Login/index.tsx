@@ -1,10 +1,6 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {MainContainer} from './styles';
 
-const Login = () => (
-  <SafeAreaView>
-    <Text>Login Page</Text>
-  </SafeAreaView>
-);
+const Login = () => <MainContainer />;
 
 export default Login;
