@@ -1,25 +1,21 @@
 import React from 'react';
-import {useTheme} from 'styled-components';
-import theme from '../../utils/theme';
 import {
   AuthGoogleButton,
   AuthGoogleText,
-  GoogleIcon,
+  GoogleIconStyled,
   MainContainer,
-  Title,
+  LogoImage,
 } from './styles';
 
 const Login = () => {
-  const {icons} = useTheme();
   return (
     <MainContainer>
-      <Title>Water your Plants!</Title>
-      <AuthGoogleButton>
-        <GoogleIcon
-          name="google"
-          size={theme.fontSizes.md}
-          color={icons.googleAuth}
-        />
+      <LogoImage
+        resizeMode="contain"
+        source={require('../../assets/images/logo.png')}
+      />
+      <AuthGoogleButton activeOpacity={0.8}>
+        <GoogleIconStyled />
         <AuthGoogleText>Continuar com o Google</AuthGoogleText>
       </AuthGoogleButton>
     </MainContainer>

@@ -1,4 +1,5 @@
-import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import GoogleIcon from '../../assets/icons/googleIcon.svg';
 
-export {MaterialCommunityIcon, MaterialIcon};
+export {MaterialCommunityIcons, MaterialIcons, GoogleIcon};

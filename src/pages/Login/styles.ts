@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import {MaterialCommunityIcon} from '../../components/Icons';
+import {GoogleIcon} from '../../components/Icons';
 import theme from '../../utils/theme';
 
 export const MainContainer = styled.SafeAreaView`
@@ -34,8 +34,13 @@ export const AuthGoogleText = styled.Text`
   font-size: ${theme.fontSizes.md}px;
 `;
 
-export const GoogleIcon = styled(MaterialCommunityIcon)`
+export const GoogleIconStyled = styled(GoogleIcon)`
   position: absolute;
   left: 10px;
   align-self: center;
+`;
+
+export const LogoImage = styled.Image`
+  width: 100%;
+  height: 40%;
 `;
