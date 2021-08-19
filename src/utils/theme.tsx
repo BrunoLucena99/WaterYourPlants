@@ -3,6 +3,7 @@ export const colors = {
   secondary: '#475A42',
   white: '#FFF',
   background: '#DDDDDF',
+  tertiary: '#718969',
   icons: {
     googleAuth: '#EA4335',
   },
