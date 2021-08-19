@@ -1,8 +1,9 @@
+import {SafeAreaView} from 'react-native-safe-area-context';
 import styled from 'styled-components/native';
 import {GoogleIcon} from '../../components/Icons';
 import theme from '../../utils/theme';
 
-export const MainContainer = styled.SafeAreaView`
+export const MainContainer = styled(SafeAreaView)`
   flex: 1;
   background: ${props => props.theme.secondary};
   justify-content: center;

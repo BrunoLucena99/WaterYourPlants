@@ -1,4 +1,5 @@
 import React from 'react';
+import {LoginPageProps} from '../../types/routes';
 import {
   AuthGoogleButton,
   AuthGoogleText,
@@ -8,7 +9,9 @@ import {
   Title,
 } from './styles';
 
-const Login = () => {
+const Login = ({navigation}: LoginPageProps) => {
+  const onGoogleAuthPress = () => navigation.navigate('Home');
+
   return (
     <MainContainer>
       <LogoImage
@@ -16,7 +19,7 @@ const Login = () => {
         source={require('../../assets/images/logo.png')}
       />
       <Title>Water Your Plants!</Title>
-      <AuthGoogleButton>
+      <AuthGoogleButton onPress={onGoogleAuthPress}>
         <GoogleIconStyled />
         <AuthGoogleText>Continuar com o Google</AuthGoogleText>
       </AuthGoogleButton>
