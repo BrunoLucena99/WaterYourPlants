@@ -21,12 +21,16 @@ export const AuthGoogleButton = styled.TouchableOpacity`
   background: ${props => props.theme.white};
   width: 100%;
   margin-top: 30px;
-  padding: 10px 15px;
+  padding: 10px 0px;
   border-radius: 10px;
   elevation: 2;
   flex-direction: row;
   justify-content: center;
 `;
+
+AuthGoogleButton.defaultProps = {
+  activeOpacity: 0.8,
+};
 
 export const AuthGoogleText = styled.Text`
   font-family: ${theme.fontFamily.regular};
@@ -41,6 +45,7 @@ export const GoogleIconStyled = styled(GoogleIcon)`
 `;
 
 export const LogoImage = styled.Image`
-  width: 100%;
-  height: 40%;
+  width: 90%;
+  height: 30%;
+  margin-bottom: 15px;
 `;

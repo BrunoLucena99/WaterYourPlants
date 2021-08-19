@@ -5,6 +5,7 @@ import {
   GoogleIconStyled,
   MainContainer,
   LogoImage,
+  Title,
 } from './styles';
 
 const Login = () => {
@@ -14,7 +15,8 @@ const Login = () => {
         resizeMode="contain"
         source={require('../../assets/images/logo.png')}
       />
-      <AuthGoogleButton activeOpacity={0.8}>
+      <Title>Water Your Plants!</Title>
+      <AuthGoogleButton>
         <GoogleIconStyled />
         <AuthGoogleText>Continuar com o Google</AuthGoogleText>
       </AuthGoogleButton>
