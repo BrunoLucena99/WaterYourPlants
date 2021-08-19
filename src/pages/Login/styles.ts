@@ -29,7 +29,7 @@ export const AuthGoogleButton = styled.TouchableOpacity`
 `;
 
 AuthGoogleButton.defaultProps = {
-  activeOpacity: 0.8,
+  activeOpacity: 0.5,
 };
 
 export const AuthGoogleText = styled.Text`
